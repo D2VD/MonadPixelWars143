@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@import '@rainbow-me/rainbowkit/styles.css';
+
+:root {
+  color-scheme: dark;
+  --background: #05050a;
+  --foreground: #f7f2ff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(123, 63, 242, .35), transparent 32rem),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 240, .16), transparent 26rem),
+    linear-gradient(180deg, #05050a 0%, #0c0718 50%, #05050a 100%);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+.pixel-card {
+  border: 1px solid rgba(184, 184, 199, .16);
+  background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  box-shadow: 0 24px 80px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter: blur(18px);
+}
+
+.neon-text { text-shadow: 0 0 28px rgba(123,63,242,.9), 0 0 64px rgba(0,255,240,.25); }
+.arcade-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
